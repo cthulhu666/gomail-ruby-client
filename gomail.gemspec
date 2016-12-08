@@ -1,4 +1,5 @@
 # coding: utf-8
+# frozen_string_literal: true
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gomail/version'
@@ -6,7 +7,7 @@ require 'gomail/version'
 Gem::Specification.new do |spec|
   spec.name          = 'gomail'
   spec.version       = Gomail::VERSION
-  spec.authors       = ["Jakub Głuszecki"]
+  spec.authors       = ['Jakub Głuszecki']
   spec.email         = ['jakub.gluszecki@gmail.com']
 
   spec.summary       = 'GoAuth client'

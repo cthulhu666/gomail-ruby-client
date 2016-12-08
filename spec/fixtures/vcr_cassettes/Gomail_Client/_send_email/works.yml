@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://mail.go.intami.pl/send/example01
+    body:
+      encoding: UTF-8
+      string: '{"to":["tuvshupe@sharklasers.com"],"model":{"foo":"bar"}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      App-Key:
+      - 'some.fake.key'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 08 Dec 2016 20:00:11 GMT
+      Server:
+      - Server:GoMail
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"success":true,"message-id":"<365488595.5.1481227211079.JavaMail.root@ns3593518.ip-178-33-231.eu>","time":"2016-12-08T20:00:11.254Z"}]}'
+    http_version: 
+  recorded_at: Thu, 08 Dec 2016 20:00:11 GMT
+recorded_with: VCR 3.0.3

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
 require 'gomail/version'
+require 'gomail/client'
 
 module Gomail
-  # Your code goes here...
+  Error = Class.new(RuntimeError)
+  SchemaError = Class.new(Error)
 end
