@@ -1,4 +1,4 @@
-require "gomail/version"
+require 'gomail/version'
 
 module Gomail
   # Your code goes here...
